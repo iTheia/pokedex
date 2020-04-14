@@ -1,0 +1,41 @@
+$padding: 5%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    &__header{
+        background: $blue;
+        display: flex;
+        padding: 10px $padding;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        .logo{
+            width: 30px;
+        }
+    }
+    
+    &__list{
+        background: $red;
+        height: 5vh;
+        overflow-y: auto;
+    }
+    &__link{
+        text-align: start;
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
